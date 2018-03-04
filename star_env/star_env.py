@@ -34,6 +34,7 @@ class StarEnv(gym.Env):
 
     def reset(self):
         self.curr_state = 0
+        self.reset_count()
         return self.state
 
     def step(self, action):
